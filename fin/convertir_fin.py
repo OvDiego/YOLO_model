@@ -3,7 +3,7 @@ import json
 import shutil
 import random
 
-# --- CONFIGURACIÓN DE RUTAS ---
+# CAMBIAR RUTA
 source_folder = r"C:\Users\diego\Documents\YOLO\YOLO_model\fin\raw_img_fin"
 output_dir = r"C:\Users\diego\Documents\YOLO\YOLO_model\fin\Dataset_Banderin"
 train_ratio = 0.8  
@@ -64,7 +64,7 @@ def process_fin():
         yolo_lines = []
         
         for shape in data['shapes']:
-            # IMPORTANTE: El nombre debe ser EXACTO al que pusiste en Labelme
+            
             if shape['label'] == "flag":
                 p = shape['points']
                 box = (min(p[0][0], p[1][0]), max(p[0][0], p[1][0]), 
@@ -79,7 +79,7 @@ def process_fin():
                 out_f.write('\n'.join(yolo_lines))
             total_procesados += 1
 
-    print(f"✅ ¡ÉXITO! Se generaron {total_procesados} imágenes en el Dataset.")
+    print(f"Se generaron {total_procesados} imágenes en el Dataset.")
 
 if __name__ == '__main__':
     process_fin()

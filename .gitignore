@@ -2,13 +2,13 @@
 venv_yolo/
 
 # Datasets y fotos (Pesan demasiado)
-**/raw_img*/
-**/videos/
-**/Dataset_*/
+#**/raw_img*/
+#**/videos/
+#**/Dataset_*/
 
 # Resultados de entrenamiento (Solo subiremos los pesos finales después)
 runs/
-**/entrenamiento_resultados/
+#**/entrenamiento_resultados/
 
 # Archivos de sistema
 .vscode/

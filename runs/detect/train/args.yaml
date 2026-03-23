@@ -1,8 +1,8 @@
 task: detect
 mode: train
-model: yolov8n.pt
-data: gates_dataset.yaml
-epochs: 100
+model: C:\Users\diego\Documents\YOLO\YOLO_model\runs\detect\runs_rocas\experimento_1\weights\best.pt
+data: rocas.yaml
+epochs: 150
 time: null
 patience: 100
 batch: 16
@@ -10,7 +10,7 @@ imgsz: 640
 save: true
 save_period: -1
 cache: false
-device: cpu
+device: '0'
 workers: 8
 project: null
 name: train
@@ -29,7 +29,7 @@ amp: true
 fraction: 1.0
 profile: false
 freeze: null
-multi_scale: false
+multi_scale: 0.0
 compile: false
 overlap_mask: true
 mask_ratio: 4
@@ -43,6 +43,7 @@ max_det: 300
 half: false
 dnn: false
 plots: true
+end2end: null
 source: null
 vid_stride: 1
 stream_buffer: false
@@ -82,6 +83,8 @@ cls: 0.5
 dfl: 1.5
 pose: 12.0
 kobj: 1.0
+rle: 1.0
+angle: 1.0
 nbs: 64
 hsv_h: 0.015
 hsv_s: 0.7
@@ -103,4 +106,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: botsort.yaml
-save_dir: /home/humubuntu/gates_images/runs/detect/train
+save_dir: C:\Users\diego\Documents\YOLO\YOLO_model\runs\detect\train

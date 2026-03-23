@@ -1,0 +1,6 @@
+# Rutas relativas a la carpeta 'fin'
+train: Dataset_Banderin/images/train
+val: Dataset_Banderin/images/val
+
+nc: 1
+names: ['fin_flag']

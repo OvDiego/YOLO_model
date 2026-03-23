@@ -1,0 +1,5 @@
+train: Dataset_Rocas_Final/images/train
+val: Dataset_Rocas_Final/images/val
+
+nc: 3
+names: ['red_stone', 'blue_stone', 'green_stone']
